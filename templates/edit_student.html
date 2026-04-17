@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Student</title>
+</head>
+<body>
+    <h2>Edit Student</h2>
+    <form method="POST">
+        <input type="text" name="name" value="{{ student.name }}" required><br><br>
+        <input type="text" name="roll" value="{{ student.roll }}" required><br><br>
+        <input type="text" name="department" value="{{ student.department }}" required><br><br>
+        <input type="number" name="marks" value="{{ student.marks }}" required><br><br>
+        <input type="number" name="attendance" value="{{ student.attendance }}" required><br><br>
+        <input type="text" name="fees" value="{{ student.fees }}" required><br><br>
+        <button type="submit">Update</button>
+    </form>
+    <br>
+    <a href="/students">Back to Student List</a>
+</body>
+</html>
